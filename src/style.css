@@ -1,0 +1,44 @@
+.selected-option-container {
+  position: relative;
+}
+.selected-option-container .selected-option {
+  border: 1px solid #1692E5;
+  padding: 5px 25px 5px 5px;
+  background: #FFF;
+}
+.selected-option-container .selected-option .arrow {
+  position: absolute;
+  right: 10px;
+}
+.selected-option-container .options-container {
+  position: absolute;
+  background: #FFF;
+  z-index: 10000;
+  width: 100%;
+  border: 1px solid #1692E5;
+  border-top: none;
+}
+.selected-option-container .options-container li {
+  padding: 5px;
+}
+.selected-option-container .options-container li:hover, .selected-option-container .options-container li.selected {
+  background: #0099FF;
+  color: #FFF;
+}
+
+.options-container,
+.selected-option-container {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.options-container li,
+.selected-option-container li {
+  min-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
